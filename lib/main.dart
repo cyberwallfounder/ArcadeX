@@ -89,7 +89,7 @@ class _ArcadeHomeState extends State<ArcadeHome> {
                     Text(
                       'YOUR OFFLINE POCKET ARCADE',
                       style: TextStyle(
-                        color: Colors.white.withOpacity(alpha: .55),
+                        color: Colors.white.withValues(alpha: .55),
                         letterSpacing: 1.5,
                         fontSize: 12,
                         fontWeight: FontWeight.w700,
@@ -106,7 +106,7 @@ class _ArcadeHomeState extends State<ArcadeHome> {
                     Text(
                       'GAMES',
                       style: TextStyle(
-                        color: Colors.white.withOpacity(alpha: .65),
+                        color: Colors.white.withValues(alpha: .65),
                         fontWeight: FontWeight.w800,
                         letterSpacing: 2,
                       ),
@@ -151,7 +151,7 @@ class _ArcadeHomeState extends State<ArcadeHome> {
                     child: Text(
                       '100% OFFLINE • ARCADEX V1.0',
                       style: TextStyle(
-                        color: Colors.white.withOpacity(alpha: .3),
+                        color: Colors.white.withValues(alpha: .3),
                         fontSize: 11,
                         letterSpacing: 1.2,
                       ),
@@ -185,7 +185,7 @@ class _ArcadeBanner extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
-        border: Border.all(color: Colors.white.withOpacity(alpha: .08)),
+        border: Border.all(color: Colors.white.withValues(alpha: .08)),
       ),
       child: Row(
         children: [
@@ -205,7 +205,7 @@ class _ArcadeBanner extends StatelessWidget {
                 const SizedBox(height: 4),
                 Text(
                   'Best score: $best',
-                  style: TextStyle(color: Colors.white.withOpacity(alpha: .55)),
+                  style: TextStyle(color: Colors.white.withValues(alpha: .55)),
                 ),
               ],
             ),
@@ -243,7 +243,7 @@ class _GameCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: const Color(0xFF11131C),
           borderRadius: BorderRadius.circular(22),
-          border: Border.all(color: Colors.white.withOpacity(alpha: .07)),
+          border: Border.all(color: Colors.white.withValues(alpha: .07)),
         ),
         child: Row(
           children: [
@@ -252,7 +252,7 @@ class _GameCard extends StatelessWidget {
               height: 58,
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: accent.withOpacity(alpha: .10),
+                color: accent.withValues(alpha: .10),
                 borderRadius: BorderRadius.circular(18),
               ),
               child: Text(icon, style: const TextStyle(fontSize: 28)),
@@ -273,7 +273,7 @@ class _GameCard extends StatelessWidget {
                   Text(
                     subtitle,
                     style: TextStyle(
-                      color: Colors.white.withOpacity(alpha: .5),
+                      color: Colors.white.withValues(alpha: .5),
                       fontSize: 13,
                     ),
                   ),
@@ -286,7 +286,7 @@ class _GameCard extends StatelessWidget {
                 Text(
                   'BEST',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(alpha: .35),
+                    color: Colors.white.withValues(alpha: .35),
                     fontSize: 9,
                     letterSpacing: 1,
                   ),
@@ -501,7 +501,7 @@ class _SnakeGameState extends State<SnakeGame> {
           Text(
             'SWIPE TO MOVE',
             style: TextStyle(
-              color: Colors.white.withOpacity(alpha: .35),
+              color: Colors.white.withValues(alpha: .35),
               fontSize: 11,
               letterSpacing: 1.5,
             ),
@@ -538,7 +538,7 @@ class SnakePainter extends CustomPainter {
     );
 
     final grid = Paint()
-      ..color = Colors.white.withOpacity(alpha: .035)
+      ..color = Colors.white.withValues(alpha: .035)
       ..strokeWidth = 1;
 
     for (var i = 1; i < size; i++) {
@@ -806,7 +806,7 @@ class _Game2048State extends State<Game2048> {
                 style: TextStyle(
                   color: over
                       ? const Color(0xFFFF5252)
-                      : Colors.white.withOpacity(alpha: .35),
+                      : Colors.white.withValues(alpha: .35),
                   fontWeight: FontWeight.w800,
                   letterSpacing: 1.5,
                 ),
@@ -1001,7 +1001,7 @@ class _TicTacToeState extends State<TicTacToe> {
             Text(
               status,
               style: TextStyle(
-                color: Colors.white.withOpacity(alpha: .55),
+                color: Colors.white.withValues(alpha: .55),
                 fontWeight: FontWeight.w900,
                 letterSpacing: 1.5,
               ),
@@ -1079,7 +1079,7 @@ class _Stat extends StatelessWidget {
         Text(
           label,
           style: TextStyle(
-            color: Colors.white.withOpacity(alpha: .35),
+            color: Colors.white.withValues(alpha: .35),
             fontSize: 10,
             letterSpacing: 1.2,
           ),
